@@ -7,7 +7,11 @@ HEADERS		:= -I ./include
 
 SRCS		:= $(addprefix $(SRCS_PATH), \
 				main.cpp \
-				Utils.cpp)
+				newZombie.cpp \
+				randomChump.cpp \
+				Zombie.cpp \
+				zombieHorde.cpp \
+			)
 
 OBJS		:= $(SRCS:$(SRCS_PATH)%.cpp=obj/%.o)
 
