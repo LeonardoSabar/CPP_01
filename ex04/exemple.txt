@@ -1,0 +1,3 @@
+Sed is a nice tool for text substitution.
+We don't use sed in this implementation.
+But sed works effectively.
