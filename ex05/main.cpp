@@ -5,20 +5,31 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: leobarbo <leobarbo@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/21 00:34:32 by leobarbo          #+#    #+#             */
-/*   Updated: 2025/01/21 01:16:54 by leobarbo         ###   ########.fr       */
+/*   Created: 2025/01/25 16:17:51 by leobarbo          #+#    #+#             */
+/*   Updated: 2025/01/25 16:17:51 by leobarbo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "Zombie.hpp"
+#include "Harl.hpp"
 
 int main()
 {
-    Zombie* heapZombie = newZombie("HeapZombie");
-    heapZombie->announce();
-    delete heapZombie;
+    Harl harl;
 
-    randomChump("StackZombie");
+    std::cout << "DEBUG level:" << std::endl;
+    harl.complain("DEBUG");
+
+    std::cout << "\nINFO level:" << std::endl;
+    harl.complain("INFO");
+
+    std::cout << "\nWARNING level:" << std::endl;
+    harl.complain("WARNING");
+
+    std::cout << "\nERROR level:" << std::endl;
+    harl.complain("ERROR");
+
+    std::cout << "\nTesting invalid level:" << std::endl;
+    harl.complain("SILLY");
 
     return 0;
 }

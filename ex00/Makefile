@@ -10,7 +10,6 @@ SRCS		:= $(addprefix $(SRCS_PATH), \
 				newZombie.cpp \
 				randomChump.cpp \
 				Zombie.cpp \
-				zombieHorde.cpp \
 			)
 
 OBJS		:= $(SRCS:$(SRCS_PATH)%.cpp=obj/%.o)
