@@ -7,7 +7,6 @@ HEADERS		:= -I ./include
 
 SRCS		:= $(addprefix $(SRCS_PATH), \
 				main.cpp \
-				newZombie.cpp \
 				randomChump.cpp \
 				Zombie.cpp \
 				zombieHorde.cpp \

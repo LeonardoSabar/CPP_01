@@ -10,9 +10,10 @@ class Zombie
     private:
         std::string _name;
     public:
+        Zombie(std::string name);
         Zombie(void);
         ~Zombie(void);
-        
+
         void announce(void) const;
         void setName(std::string _name);
 };
