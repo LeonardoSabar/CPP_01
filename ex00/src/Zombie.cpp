@@ -12,15 +12,17 @@
 
 #include "Zombie.hpp"
 
+Zombie::~Zombie(void)
+{
+    std::cout << _name << " is destroyed." << std::endl;
+}
+
 Zombie::Zombie(void) : _name("Unnamed Zombie")
 {
+    std::cout << _name << " has been created." << std::endl;
 }
 
-Zombie::Zombie(std::string name) : _name(name)
-{
-}
-
-void Zombie::announce(void)
+void Zombie::announce(void) const
 {
     std::cout << _name << ": " << G << "BraiiiiiiinnnzzzZ..." << RST << std::endl;
 }
@@ -28,9 +30,4 @@ void Zombie::announce(void)
 void Zombie::setName(std::string name)
 {
     _name = name;
-}
-
-Zombie::~Zombie(void)
-{
-    std::cout << _name << " is destroyed." << std::endl;
 }
